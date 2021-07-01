@@ -1,6 +1,6 @@
 :root{
-    --vermelho: #E50914;
-    --preta: #141414;
+    --azul: #3db0f7;
+    --branco: #f8f8f8;
 }
 
 *{
@@ -11,21 +11,27 @@
 
 /*elementos base*/
 body{
-    background: var(--preta);
+    background: var(--branco);
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
 
 header .container{
-    display: flex;
-    flex-direction: row;
+    max-width: 1130px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 header .logo{
     margin-left: 5px;
-    color: var(--vermelho);
+    color: var(--azul);
     font-family: 'Arial Black', Times;
     font-size: 40px;
 }
@@ -66,21 +72,28 @@ header nav a:hover{
 }
 
 .botao{
-    background-color: rgba(0,0,0,.50);
     border: none;
-    color: white;
+    color: var(--azul);
 
-    padding: 15px 30px;
-    margin-right: 15px;
-    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 40px;
+    margin-right: 25px;
+    margin-bottom: 5%;
+    font-size: 13px;
 
     cursor: pointer;
     transition: 1s ease all;
 }
 
+body main div .botao{
+    background-color: #9a9a9a;
+    color: white
+}
+
 .botao:hover{
-    background-color: white;
-    color: black;
+    background-color: var(--azul);
+    color: white;
 }
 
 .botao i{
@@ -103,4 +116,5 @@ header nav a:hover{
 
 .carrosel-filmes{
     margin-top: 5px;
+    
 }
